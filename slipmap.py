@@ -7,7 +7,7 @@ BASE_URL = "https://weather.com/weather/today/l/"
 
 origin = 'Göteborg'
 destination = 'Borås'
-MAPS_URL = f"https://maps.googleapis.com/maps/api/directions/json?origin={origin}&destination={destination}&key=AIzaSyAPY29uSyIjrrjX4dJDrHdJQ-2Cte7diXw"
+MAPS_URL = f"https://maps.googleapis.com/maps/api/directions/json?origin={origin}&destination={destination}&key={os.environ['gmaps_key']}"
 
 def dict_pretty_print(indict):
     print("-----------------------")
