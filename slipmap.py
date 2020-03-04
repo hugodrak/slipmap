@@ -3,8 +3,7 @@ from bs4 import BeautifulSoup
 import os
 # https://weather.com/weather/today/l/57.71,11.92?temp=c
 BASE_URL = "https://weather.com/weather/today/l/"
-os.environ["http_proxy"] = "http://cloudpxgot1.srv.volvo.com:8080"
-os.environ["https_proxy"] = "https://cloudpxgot1.srv.volvo.com:8080"
+
 
 
 def get_data(lat, long):
